@@ -164,5 +164,10 @@ public static void setDatabase(ArrayList<Constructors> database) {
 	Constructors.database = database;
 }
 
+@Override
+public String toString() {
+	return firstName + lastName+ Period1 +  class1 + gradeClass1 +  Period2 +  class2+  gradeClass2 +  Period3+ class3 + gradeClass3 + + GPA;
+}
+
 
 }
