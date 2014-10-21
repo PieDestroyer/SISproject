@@ -7,7 +7,6 @@ public class Main
 		{
 		
 		
-		System.out.println(Constructors.database.get(8));
 
 		}
 
