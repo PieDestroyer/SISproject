@@ -38,14 +38,16 @@ public Constructors(String f, String l, int p1, String c1, String g1, int p2, St
 	GPA = GpA; 
 }
 
-public void createArraylist() throws IOException
+public static void createArraylist() throws IOException
 {
 
 
 
 Scanner file = new Scanner(new File("studentlist2.txt"));
 
-while(file.hasNext())
+int numberOfStudents = file.nextInt();
+
+for(int i = 0; i < numberOfStudents; i++)
 {
 	firstName = file.next();
 	lastName = file.next();
@@ -62,10 +64,11 @@ while(file.hasNext())
 
 	}
 
-public static void main(String[] args)
+public static void main(String[] args) throws IOException
 {
+	createArraylist();
 	
-	System.out.println(database.get(0));
+	System.out.println(database);
 }
 
 
@@ -97,8 +100,8 @@ public  static String getClass1() {
 	return class1;
 }
 
-public void setClass1(String class1) {
-	this.class1 = class1;
+public static void setClass1(String class1) {
+	Constructors.class1 = class1;
 }
 
 public  static String getGradeClass1() {
@@ -175,7 +178,7 @@ public static void setDatabase(ArrayList<Constructors> database) {
 
 @Override
 public  String toString() {
-	return firstName + lastName+ Period1 +  class1 + gradeClass1 +  Period2 +  class2+  gradeClass2 +  Period3+ class3 + gradeClass3 + GPA;
+	return "\n" +firstName + " " + lastName+" " + Period1 +" " +  class1 + " " +gradeClass1 +" " +  Period2 +  " " +class2+ " " + gradeClass2 + " " + Period3+ " " +class3 + " " +gradeClass3 + " " +GPA;
 }
 
 
