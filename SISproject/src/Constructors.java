@@ -7,18 +7,18 @@ import java.util.ArrayList;
 
 public class Constructors
 	{
-	private static String firstName;
-	private static String lastName;
-	private static int Period1 = 1;
-	private static String class1;
-	private static String gradeClass1;
-	private static int Period2 = 2;
-	private static String class2;
-	private static String gradeClass2;
-	private static int Period3 = 3;
-	private static  String class3;
-	private static String gradeClass3;
-	private static double GPA = 0;
+	private String firstName;
+	private String lastName;
+	private int Period1 = 1;
+	private String class1;
+	private String gradeClass1;
+	private int Period2 = 2;
+	private  String class2;
+	private String gradeClass2;
+	private int Period3 = 3;
+	private  String class3;
+	private String gradeClass3;
+	private  double GPA = 0;
 	
 	static ArrayList <Constructors> database = new ArrayList <Constructors> ();
 	
@@ -64,115 +64,110 @@ for(int i = 0; i < numberOfStudents; i++)
 
 	}
 
-public static void main(String[] args) throws IOException
-{
-	createArraylist();
-	
-	System.out.println(database);
-}
 
 
-public static String getFirstName() {
+
+public String getFirstName() {
 	return firstName;
 }
 
-public static void setFirstName(String firstName) {
-	Constructors.firstName = firstName;
+public void setFirstName(String firstName) {
+	this.firstName = firstName;
 }
 
-public static String getLastName() {
+public String getLastName() {
 	return lastName;
 }
 
-public static void setLastName(String lastName) {
-	Constructors.lastName = lastName;
+public void setLastName(String lastName) {
+	this.lastName = lastName;
 }
 
-public  static int getPeriod1() {
+public int getPeriod1() {
 	return Period1;
 }
 
-public  static void setPeriod1(int period1) {
+public void setPeriod1(int period1) {
 	Period1 = period1;
 }
 
-public  static String getClass1() {
+public String getClass1() {
 	return class1;
 }
 
-public static void setClass1(String class1) {
-	Constructors.class1 = class1;
+public void setClass1(String class1) {
+	this.class1 = class1;
 }
 
-public  static String getGradeClass1() {
+public String getGradeClass1() {
 	return gradeClass1;
 }
 
-public static void setGradeClass1(String gradeClass1) {
-	Constructors.gradeClass1 = gradeClass1;
+public void setGradeClass1(String gradeClass1) {
+	this.gradeClass1 = gradeClass1;
 }
 
-public  static int getPeriod2() {
+public int getPeriod2() {
 	return Period2;
 }
 
-public  static void setPeriod2(int period2) {
+public void setPeriod2(int period2) {
 	Period2 = period2;
 }
 
-public  static String getClass2() {
+public String getClass2() {
 	return class2;
 }
 
-public static void setClass2(String class2) {
-	Constructors.class2 = class2;
+public void setClass2(String class2) {
+	this.class2 = class2;
 }
 
-public static  String getGradeClass2() {
+public String getGradeClass2() {
 	return gradeClass2;
 }
 
-public static void setGradeClass2(String gradeClass2) {
-	Constructors.gradeClass2 = gradeClass2;
+public void setGradeClass2(String gradeClass2) {
+	this.gradeClass2 = gradeClass2;
 }
 
-public  static int getPeriod3() {
+public int getPeriod3() {
 	return Period3;
 }
 
-public static void setPeriod3(int period3) {
+public void setPeriod3(int period3) {
 	Period3 = period3;
 }
 
-public static  String getClass3() {
+public String getClass3() {
 	return class3;
 }
 
-public static void setClass3(String class3) {
-	Constructors.class3 = class3;
+public void setClass3(String class3) {
+	this.class3 = class3;
 }
 
-public static  String getGradeClass3() {
+public String getGradeClass3() {
 	return gradeClass3;
 }
 
-public static void setGradeClass3(String gradeClass3) {
-	Constructors.gradeClass3 = gradeClass3;
+public void setGradeClass3(String gradeClass3) {
+	this.gradeClass3 = gradeClass3;
 }
 
-public  static double getGPA() {
+public double getGPA() {
 	return GPA;
 }
 
-public  static void setGPA(double gPA) {
+public void setGPA(double gPA) {
 	GPA = gPA;
 }
 
-public static ArrayList<Constructors> getDatabase() {
+public ArrayList<Constructors> getDatabase() {
 	return database;
 }
 
-public static void setDatabase(ArrayList<Constructors> database) {
+public void setDatabase(ArrayList<Constructors> database) {
 	Constructors.database = database;
 }
 
