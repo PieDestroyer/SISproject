@@ -76,16 +76,16 @@ public static String getFirstName() {
 	return firstName;
 }
 
-public void setFirstName(String firstName) {
-	this.firstName = firstName;
+public static void setFirstName(String firstName) {
+	Constructors.firstName = firstName;
 }
 
 public static String getLastName() {
 	return lastName;
 }
 
-public void setLastName(String lastName) {
-	this.lastName = lastName;
+public static void setLastName(String lastName) {
+	Constructors.lastName = lastName;
 }
 
 public  static int getPeriod1() {
@@ -108,8 +108,8 @@ public  static String getGradeClass1() {
 	return gradeClass1;
 }
 
-public void setGradeClass1(String gradeClass1) {
-	this.gradeClass1 = gradeClass1;
+public static void setGradeClass1(String gradeClass1) {
+	Constructors.gradeClass1 = gradeClass1;
 }
 
 public  static int getPeriod2() {
@@ -124,16 +124,16 @@ public  static String getClass2() {
 	return class2;
 }
 
-public void setClass2(String class2) {
-	this.class2 = class2;
+public static void setClass2(String class2) {
+	Constructors.class2 = class2;
 }
 
 public static  String getGradeClass2() {
 	return gradeClass2;
 }
 
-public void setGradeClass2(String gradeClass2) {
-	this.gradeClass2 = gradeClass2;
+public static void setGradeClass2(String gradeClass2) {
+	Constructors.gradeClass2 = gradeClass2;
 }
 
 public  static int getPeriod3() {
@@ -148,16 +148,16 @@ public static  String getClass3() {
 	return class3;
 }
 
-public void setClass3(String class3) {
-	this.class3 = class3;
+public static void setClass3(String class3) {
+	Constructors.class3 = class3;
 }
 
 public static  String getGradeClass3() {
 	return gradeClass3;
 }
 
-public void setGradeClass3(String gradeClass3) {
-	this.gradeClass3 = gradeClass3;
+public static void setGradeClass3(String gradeClass3) {
+	Constructors.gradeClass3 = gradeClass3;
 }
 
 public  static double getGPA() {
