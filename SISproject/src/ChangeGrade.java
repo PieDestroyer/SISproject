@@ -7,6 +7,8 @@ public class ChangeGrade
 			System.out.println("Which student's grade do you wish to change?");
 			String StudentNumber=read.nextLine();
 			
-			//Constructors.database.get()
+			/*Constructors.database.get()
+			 * 
+			 */
 		}
 	}
