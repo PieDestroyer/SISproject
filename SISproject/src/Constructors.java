@@ -38,31 +38,47 @@ public Constructors(String f, String l, int p1, String c1, String g1, int p2, St
 	GPA = GpA; 
 }
 
-public static void createArraylist() throws IOException
+
+
+public void createArraylist() throws IOException
 {
-
-
 
 Scanner file = new Scanner(new File("studentlist2.txt"));
 
-int numberOfStudents = file.nextInt();
-
-for(int i = 0; i < numberOfStudents; i++)
+while(file.hasNext())
 {
 	firstName = file.next();
 	lastName = file.next();
+	Period1 = 1;
 	class1 = file.next();
 	gradeClass1 = file.next();
+	Period2 = 2;
 	class2 = file.next();
 	gradeClass2 = file.next();
+	Period3 = 3;
 	class3 = file.next();
 	gradeClass3 = file.next();
+	GPA = 0; 
 	
 	database.add(new Constructors(firstName, lastName, Period1, class1, gradeClass1, Period2, class2, gradeClass2, Period3, class3, gradeClass3, GPA));
 	
 }
 
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
