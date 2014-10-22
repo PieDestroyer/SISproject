@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.io.*;
 import java.util.ArrayList;
 
-public class Constructors
+public class Students
 	{
 	private String firstName;
 	private String lastName;
@@ -20,9 +20,9 @@ public class Constructors
 	private String gradeClass3;
 	private  double GPA = 0;
 	
-	static ArrayList <Constructors> database = new ArrayList <Constructors> ();
+	static ArrayList <Students> database = new ArrayList <Students> ();
 	
-public Constructors(String f, String l, int p1, String c1, String g1, int p2, String c2, String g2, int p3, String c3, String g3, double GpA)
+public Students(String f, String l, int p1, String c1, String g1, int p2, String c2, String g2, int p3, String c3, String g3, double GpA)
 {
 	firstName = f;
 	lastName = l; 
@@ -60,7 +60,7 @@ while(file.hasNext())
 	gradeClass3 = file.next();
 	GPA = 0; 
 	
-	database.add(new Constructors(firstName, lastName, Period1, class1, gradeClass1, Period2, class2, gradeClass2, Period3, class3, gradeClass3, GPA));
+	database.add(new Students(firstName, lastName, Period1, class1, gradeClass1, Period2, class2, gradeClass2, Period3, class3, gradeClass3, GPA));
 	
 }
 
@@ -179,12 +179,12 @@ public void setGPA(double gPA) {
 	GPA = gPA;
 }
 
-public ArrayList<Constructors> getDatabase() {
+public ArrayList<Students> getDatabase() {
 	return database;
 }
 
-public void setDatabase(ArrayList<Constructors> database) {
-	Constructors.database = database;
+public void setDatabase(ArrayList<Students> database) {
+	Students.database = database;
 }
 
 @Override
