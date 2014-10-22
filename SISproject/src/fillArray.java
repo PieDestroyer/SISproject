@@ -2,12 +2,12 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-
+//
 public class fillArray
 	{
 
 	
-	public void createArraylist() throws IOException
+	public static void createArraylist() throws IOException
 	{
 
 	Scanner file = new Scanner(new File("studentlist2.txt"));
