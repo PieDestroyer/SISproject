@@ -10,25 +10,25 @@ public class ChangeGrade
 	public static void changeGrade() {
 		System.out.println("What is the last name of the student whose grade you wish to change?");
 		lastNameCheck = read.next();
-		for (int i = 0; i < Constructors.database.size(); i++) 
+		for (int i = 0; i < Students.database.size(); i++) 
 			{
-				if (Constructors.database.get(i).getLastName().contains(lastNameCheck)) 
+				if (Students.database.get(i).getLastName().contains(lastNameCheck)) 
 					{
 						System.out.println("What period's grade would you like to change. ex. 1, 2, or 3");
 						int periodChoice = read.nextInt();
-						System.out.println("What would you to change the grade of Mr. or Ms. "+ Constructors.database.get(i).getLastName() + " to");
+						System.out.println("What would you to change the grade of Mr. or Ms. "+ Students.database.get(i).getLastName() + " to");
 						public String gradeNew = read.next();
 						if (periodChoice == 1) 
 							{
-								Constructors.database.get(i).setGradeClass1(gradeNew);
+								Students.database.get(i).setGradeClass1(gradeNew);
 							}
 						else if
 							{
-								Constructors.database.get(i).setGradeClass2(gradeNew);
+								Students.database.get(i).setGradeClass2(gradeNew);
 							}
 						else if
 							{
-								Constructors.database.get(i).setGradeClass3(gradeNew);
+								Students.database.get(i).setGradeClass3(gradeNew);
 							}
 						else
 							{
