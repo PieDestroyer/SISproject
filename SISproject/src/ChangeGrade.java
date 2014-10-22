@@ -5,12 +5,12 @@ public class ChangeGrade
 	static Scanner read = new Scanner(System.in);
 	static String choice;
 	static String lastNameCheck;
-	public int 
+	static int count =0;
 
 	public static void changeGrade() {
 		System.out.println("What is the last name of the student whose grade you wish to change?");
 		lastNameCheck = read.next();
-		for (int i = 0; i < Students.database.size(); i++) 
+		for (int i = 0; i < Students.database.size(); i++, count++) 
 			{
 				if (Students.database.get(i).getLastName().contains(lastNameCheck)) 
 					{
@@ -20,11 +20,11 @@ public class ChangeGrade
 						public String gradeNew = read.next();
 						if (periodChoice == 1) 
 							{
-								Students.database.get(i).setGradeClass1(gradeNew);
+								Students.database.get(count).setGradeClass1(gradeNew);
 							}
 						else if
 							{
-								Students.database.get(i).setGradeClass2(gradeNew);
+								Students.database.get(count).setGradeClass2(gradeNew);
 							}
 						else if
 							{
@@ -37,8 +37,10 @@ public class ChangeGrade
 					}
 				else
 					{
-					syso
+					System.out.println();
 					}
 		}
+	}
+}
 	
 	
