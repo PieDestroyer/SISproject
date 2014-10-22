@@ -6,6 +6,9 @@ public class Main
 	// commit from home
 	public static void main(String[] args)
 		{
+		int option;
+		Scanner input = new Scanner(System.in);
+
 		System.out.println("What would you like to do?");
 		System.out.println();
 		System.out.println("<1> Add or delete a student");
@@ -18,11 +21,11 @@ public class Main
 			}
 		if (option == 2)
 			{
-			
+
 			}
 		if (option == 3)
 			{
-			
+
 			}
 		}
 
