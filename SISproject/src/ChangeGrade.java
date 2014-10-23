@@ -38,7 +38,7 @@ public class ChangeGrade
 					}
 				else
 					{
-					System.out.println();
+					System.out.println("Sorry, that is not a valid last name.");
 					}
 		}
 	}
