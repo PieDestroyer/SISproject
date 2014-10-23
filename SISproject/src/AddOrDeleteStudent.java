@@ -81,9 +81,9 @@ public class AddOrDeleteStudent
 		Scanner input = new Scanner(System.in);
 		System.out.println("First name?");
 		firstName = input.nextLine();
-		for(int i=0;i<Students.database.size();i++ )
-		if(Students.database.get(i).getFirstName().equals(firstName))
-		Students.database.remove(i);
+		for (int i = 0; i < Students.database.size(); i++)
+			if (Students.database.get(i).getFirstName().equals(firstName))
+				Students.database.remove(i);
 		System.out.println(Students.database);
 		System.exit(0);
 		}
