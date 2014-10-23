@@ -3,6 +3,6 @@ public class SortByLastName
 	{
 	public int compare(Students n1, Students n2)
 		{
-		return n1.getLastName().compareTo(n2.getLastName());
+		return n2.getLastName().compareTo(n1.getLastName());
 		}
 	}

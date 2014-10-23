@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.Collections;
 
 public class Main
 	{
@@ -27,8 +28,30 @@ public class Main
 			}
 		if (option == 3)
 			{
-
+			System.out.println("What would you like to sort by?");
+			System.out.println();
+			System.out.println("<1> By class");
+			System.out.println("<2> By GPA");
+			System.out.println("<3> By last name");
+			option = input.nextInt();
+			if (option ==1)
+				{
+				Collections.sort(Students.database,new SortByClass());
+				}
+			if (option ==2)
+				{
+				fillArray.createArraylist();
+				makeGPA.createGPA();
+				
+				Collections.sort(Students.database,new SortByGPA());
+				System.out.println(Students.database);
+				}
+			if (option ==3)
+				{
+				Collections.sort(Students.database,new SortByLastName());
+				}
 			}
+
 		}
 
 	}
