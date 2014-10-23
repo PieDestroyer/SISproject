@@ -2,18 +2,17 @@ import java.util.Scanner;
 
 public class ChangeGrade
 	{
-	static Scanner read = new Scanner(System.in);
-	static String choice;
-	static String lastNameCheck;
-	static int count =0;
-	public static String gradeNew;
+	public static Scanner read = new Scanner(System.in);
+	private static String choice;
+	private static String lastNameCheck;
+	private static String gradeNew;
 
 	public static void changeGrade() {
 		System.out.println("What is the last name of the student whose grade you wish to change?");
 		lastNameCheck = read.next();
 		for (int i = 0; i < Students.database.size(); i++) 
 			{
-				if(Students.database.get(i).getLastName().contains(lastNameCheck)) 
+				if(Students.database.get(i).getLastName().equals(lastNameCheck)) 
 					{
 						System.out.println("What period's grade would you like to change. ex. 1, 2, or 3");
 						int periodChoice = read.nextInt();
@@ -43,5 +42,3 @@ public class ChangeGrade
 		}
 	}
 }
-	
-	
