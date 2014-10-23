@@ -88,72 +88,72 @@ public static void createGPA()
 		{
 		case "A+": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 4.3)/2);	
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 4.3))*100)/100);	
 			break;
 		}
 		case "A": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 4.0)/2);
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 4.0))*100)/100);
 			break;
 		}
 		case "A-": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 3.7)/2);
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 3.7))*100)/100);
 			break;
 		}
 		case "B+": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 3.3)/2);
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 3.3))*100)/100);
 			break;
 		}
 		case "B": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 3.0)/2);
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 3.0))*100)/100);
 			break;
 		}
 		case "B-": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 2.7)/2);
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 2.7))*100)/100);
 			break;
 		}
 		case "C+": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 2.3)/2);
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 2.3))*100)/100);
 			break;
 		}
 		case "C": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 2.0)/2);
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 2.0))*100)/100);
 			break;
 		}
 		case "C-": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 1.7)/2);
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 1.7))*100)/100);
 			break;
 		}
 		case "D+": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 1.3)/2);
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 1.3))*100)/100);
 			break;
 		}
 		case "D": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 1.0)/2);
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 1.0))*100)/100);
 			break;
 		}
 		case "D-": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 0.7)/2);
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 0.7))*100)/100);
 			break;
 		}
 		case "F+": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 0.3)/2);
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 0.3))*100)/100);
 			break;
 		}
 		case "F": 
 		{
-			Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 0.0)/2);
+			Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 0.0))*100)/100);
 			break;
 		}
 	}
@@ -166,72 +166,72 @@ public static void createGPA()
 				{
 				case "A+": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 4.3)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 4.3)/3)*100)/100);
 					break;
 				}
 				case "A": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 4.0)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 4.0)/3)*100)/100);
 					break;
 				}
 				case "A-": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 3.7)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 3.7)/3)*100)/100);
 					break;
 				}
 				case "B+": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 3.3)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 3.3)/3)*100)/100);
 					break;
 				}
 				case "B": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 3.0)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 3.0)/3)*100)/100);
 					break;
 				}
 				case "B-": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 2.7)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 2.7)/3)*100)/100);
 					break;
 				}
 				case "C+": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 2.3)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 2.3)/3)*100)/100);
 					break;
 				}
 				case "C": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 2.0)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 2.0)/3)*100)/100);
 					break;
 				}
 				case "C-": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 1.7)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 1.7)/3)*100)/100);
 					break;
 				}
 				case "D+": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 1.3)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 1.3)/3)*100)/100);
 					break;
 				}
 				case "D": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 1.0)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 1.0)/3)*100)/100);
 					break;
 				}
 				case "D-": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 0.7)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 0.7)/3)*100)/100);
 					break;
 				}
 				case "F+": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 0.3)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 0.3)/3)*100)/100);
 					break;
 				}
 				case "F": 
 				{
-					Students.database.get(i).setGPA((Students.database.get(i).getGPA() + 0.0)/3);
+					Students.database.get(i).setGPA((double)Math.round(((Students.database.get(i).getGPA() + 0.0)/3)*100)/100);
 					break;
 				}
 			}
