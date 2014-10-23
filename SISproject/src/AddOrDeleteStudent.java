@@ -84,7 +84,9 @@ public class AddOrDeleteStudent
 		for (int i = 0; i < Students.database.size(); i++)
 			if (Students.database.get(i).getFirstName().equals(firstName))
 				Students.database.remove(i);
+		makeGPA.createGPA();
 		System.out.println(Students.database);
+		
 		System.exit(0);
 		}
 	}
