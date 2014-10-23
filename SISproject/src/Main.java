@@ -1,10 +1,12 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main
 	{
 	// mine
 	// commit from home
-	public static void main(String[] args)
+	
+	public static void main(String[] args) throws IOException
 		{
 		int option;
 		Scanner input = new Scanner(System.in);

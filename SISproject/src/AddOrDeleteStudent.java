@@ -1,16 +1,17 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class AddOrDeleteStudent
 	{
 
-	public static void main(String[] args)
+	public static void main(String[] args) throws IOException
 		{
 		Intro();
 		AddStudent();
 		DeleteStudent();
 		}
 
-	public static void Intro()
+	public static void Intro() throws IOException
 		{
 		int option;
 		Scanner input = new Scanner(System.in);
@@ -23,26 +24,41 @@ public class AddOrDeleteStudent
 			}
 		if (option == 2)
 			{
-
+			DeleteStudent();
+			
 			}
 		}
 
-	public static void AddStudent()
+	public static void AddStudent() throws IOException
 		{
+		fillArray.createArraylist();
 		String firstName;
 		String lastName;
+		String class1;
+		String grade1;
+		String class2;
+		String grade2;
+		String class3;
+		String grade3;
+		
 		Scanner input = new Scanner(System.in);
 		System.out.println("First name?");
 		firstName = input.nextLine();
 		System.out.println("Last name?");
 		lastName = input.nextLine();
 		System.out.println("Class 1?");
-		lastName = input.nextLine();
-		System.out.println("Last name?");
-		lastName = input.nextLine();
-		System.out.println("Last name?");
-		lastName = input.nextLine();
-		
+		class1 = input.nextLine();
+		System.out.println("Grade?");
+		grade1 = input.nextLine();
+		System.out.println("Class 2?");
+		class2 = input.nextLine();
+		System.out.println("Grade?");
+		grade2 = input.nextLine();
+		System.out.println("Class 3?");
+		class3 = input.nextLine();
+		System.out.println("Grade?");
+		grade3 = input.nextLine();
+		System.out.println(Students.database + "\n" + firstName + " " + lastName + " " + class1 + " " + grade1 + " " + class2 + " " + grade2 + " " + class3 + " " + grade3);
 
 		}
 
