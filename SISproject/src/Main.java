@@ -34,7 +34,7 @@ public class Main
 				}
 			if(option==2)
 				{
-				
+				SwitchClass.changeSchedule();
 				}
 			}
 		if (option == 3)
