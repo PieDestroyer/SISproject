@@ -24,7 +24,17 @@ public class Main
 			}
 		if (option == 2)
 			{
-
+			System.out.println("<1> Change a students grade");
+			System.out.println("<2> Change a students schedule");
+			option = input.nextInt();
+			if(option==1)
+				{
+				ChangeGrade.changeGrade();
+				}
+			if(option==2)
+				{
+				
+				}
 			}
 		if (option == 3)
 			{
