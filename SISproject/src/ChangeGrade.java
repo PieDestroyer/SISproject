@@ -12,6 +12,7 @@ public class ChangeGrade
 	public static void changeGrade() throws IOException
 		{
 		fillArray.createArraylist();
+		makeGPA.createGPA();
 		for(int x=0;x<Students.database.size(); x++)
 			{
 			System.out.println((x+1)+".)"+" "+Students.database.get(x));
