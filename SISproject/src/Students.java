@@ -67,22 +67,6 @@ while(file.hasNext())
 	}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 public String getFirstName() {
 	return firstName;
 }
@@ -189,7 +173,7 @@ public void setDatabase(ArrayList<Students> database) {
 
 @Override
 public  String toString() {
-	return "\n" +firstName + " " + lastName+" " + Period1 +" " +  class1 + " " +gradeClass1 +" " +  Period2 +  " " +class2+ " " + gradeClass2 + " " + Period3+ " " +class3 + " " +gradeClass3 + " " +GPA;
+	return "\n\n" +firstName + " " + lastName+"\n" + "Period " + Period1 +") " +  class1 + " " +gradeClass1 +" " +  "\nPeriod "+Period2 +  ") " +class2+ " " + gradeClass2 + " " + "\nPeriod "+Period3+ ") " +class3 + " " +gradeClass3 + " " +"\nGPA: " +GPA;
 }
 
 

@@ -15,15 +15,14 @@ public class ChangeGrade
 		makeGPA.createGPA();
 		for(int x=0;x<Students.database.size(); x++)
 			{
-			System.out.println((x+1)+".)"+" "+Students.database.get(x));
+			System.out.println("\n" + (x+1)+".)"+" "+Students.database.get(x));
 			}
 		System.out.println("What is the number of the student you would like to change.");
 		studentNumb=read.nextInt();
-		System.out.println("What is the students new grade.");
-		gradeNew=read.next();
 		System.out.println("What period's grade would you like to change? 1, 2, or 3.");
 		classChoice=read.nextInt();
-
+		System.out.println("What is the students new grade.");
+		gradeNew=read.next();
 		if(studentNumb<25)
 			{
 			
@@ -48,8 +47,9 @@ public class ChangeGrade
 				}
 			}
 		else
+		
 			{
-			System.out.println("That is not a valid studnet number.");
+			System.out.println("That is not a valid student number.");
 			}
 		}
 	}

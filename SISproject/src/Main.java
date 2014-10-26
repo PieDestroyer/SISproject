@@ -19,14 +19,15 @@ public class Main
 		System.out.println("<2> Change student grades or schedule");
 		System.out.println("<3> Sort students");
 		option = input.nextInt();
+		
 		if (option == 1)
 			{
 			AddOrDeleteStudent.Intro();
 			}
 		if (option == 2)
 			{
-			System.out.println("<1> Change a students grade");
-			System.out.println("<2> Change a students schedule");
+			System.out.println("<1> Change a student's grade");
+			System.out.println("<2> Change a student's schedule");
 			option = input.nextInt();
 			if(option==1)
 				{
@@ -47,7 +48,11 @@ public class Main
 			option = input.nextInt();
 			if (option ==1)
 				{
+				fillArray.createArraylist();
+				makeGPA.createGPA();
+				
 				Collections.sort(Students.database,new SortByClass());
+				System.out.println(Students.database);
 				}
 			if (option ==2)
 				{
@@ -59,9 +64,9 @@ public class Main
 				}
 			if (option ==3)
 				{
-				//System.out.println(SortByLastName.SortingLastName);
 				fillArray.createArraylist();
 				makeGPA.createGPA();
+				
 				Collections.sort(Students.database,new SortByLastName());
 				System.out.println(Students.database);
 				}
