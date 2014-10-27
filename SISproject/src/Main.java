@@ -50,7 +50,6 @@ public class Main
 				{
 				fillArray.createArraylist();
 				makeGPA.createGPA();
-				
 				Collections.sort(Students.database,new SortByClass());
 				System.out.println(Students.database);
 				}
@@ -58,7 +57,6 @@ public class Main
 				{
 				fillArray.createArraylist();
 				makeGPA.createGPA();
-				
 				Collections.sort(Students.database,new SortByGPA());
 				System.out.println(Students.database);
 				}
@@ -66,7 +64,6 @@ public class Main
 				{
 				fillArray.createArraylist();
 				makeGPA.createGPA();
-				
 				Collections.sort(Students.database,new SortByLastName());
 				System.out.println(Students.database);
 				}
